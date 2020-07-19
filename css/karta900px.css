@@ -1,0 +1,16 @@
+.line {
+  height: 6vh;
+}
+
+.white {}
+
+.green {
+  display: none;
+}
+
+.red {}
+
+.space {
+  display: flex;
+  justify-content: space-evenly;
+}

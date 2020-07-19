@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* font-family: 'Poiret One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap');
+/* font-family: 'Yantramanav', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {}
+
+p {
+  color: grey
+}
+
+.sec {
+  text-align: center;
+  vertical-align: middle;
+  color: whitesmoke;
+  width: 100%
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  animation-name: loader;
+  animation-duration: 9s;
+  z-index: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 90%;
+  }
+}
+
+h1 {
+  opacity: 60%;
+  font-size: 3rem;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  transition: all 0.9s ease-in-out;
+}
+
+h1:hover {
+  opacity: 100%
+}
+
+.con {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.box {
+  border: #ccc 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  color: white
+}
+
+/* HAMBURGER START */
+
+:root {
+  --primary-color: rgba(1, 1, 1, 0);
+  --secondary-color: rgba(1, 1, 1, 0);
+  /* kolor tła po rozwinieciu hamburgera */
+  --overlay-color: rgba(1, 1, 1, 1);
+  /* how fast hamburger menu will open */
+  --menu-speed: 1s;
+}
+
+.menu-wrap {
+  position: fixed;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  z-index: 1;
+  width: 3rem;
+  height: 6rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger>div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 0.2rem;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger>div::before,
+.menu-wrap .hamburger>div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -1rem;
+  width: 100%;
+  height: 0.2rem;
+  background: inherit;
+}
+
+/*  Moves line down*/
+.menu-wrap .hamburger>div::after {
+  top: 1rem;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked+.hamburger>div {
+  transform: rotate(135deg);
+}
+
+/* Turn lines into x */
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when chcek */
+.menu-wrap .toggler:checked:hover+.hamburger>div {
+  transform: rotate(225deg);
+
+}
+
+/* Show menu by clicking on hamburger*/
+.menu-wrap .toggler:checked~.menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+/* end of show menu */
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu>div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 300vw;
+  height: 300vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu>div>div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4 ease;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+  list-style: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li>a:hover {
+  color: grey;
+}
+
+
+
+.logo {
+  max-width: 7rem;
+  opacity: 80%;
+  top: 0.4rem;
+  justify-self: flex-start;
+  opacity: 60%;
+  transition: all 0.9s ease-in-out;
+}
+
+.logo:hover {
+  opacity: 80%
+}
+
+.sec1_mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+.logo_container {
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 50%;
+  position: fixed;
+  position: absolute;
+  right: 5.5rem;
+  transition: all 0.9s ease-in-out;
+}
+
+.menu-wrap:hover {
+  opacity: 90%;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.box1_1_1 {
+  max-width: 10rem;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.line {
+  height: 7vh;
+  display: flex;
+  flex-shrink: 1;
+  padding: 1.5rem;
+}
+
+.con_menu {
+  width: 25%;
+  height: 100%;
+  flex-shrink: 1;
+  opacity: 600%;
+  transition: all 0.9s ease-in-out;
+}
+
+.con_menu:hover {
+  opacity: 90%;
+  transition: all 0.9s ease-in-out;
+}
+
+.photo {
+  max-width: 100vw;
+}
+
+.space {
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 0;
+}
+
+.white {
+  max-height: 70vh;
+  cursor: default;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-name: spoonwhite;
+}
+
+.red {
+  max-height: 70vh;
+  cursor: default;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-name: spoonred;
+}
+
+.green {
+  max-height: 70vh;
+  cursor: default;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-name: spoongreen;
+}
+
+@keyframes spoonwhite {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes spoonred {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes spoongreen {
+  50% {
+    opacity: 0;
+  }
+}
+
+.sec8 {
+  width: 100vw;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(37, 37, 37);
+  font-family: 'Montserrat', sans-serif;
+  ;
+  font-weight: bold;
+  align-items: center;
+  font-size: 15px;
+  background-color: cover;
+}
+
+.subtxt8 {
+  letter-spacing: 2px;
+}
+
+.inbox8_1_1_1 {
+  opacity: 50%;
+  max-width: 20rem;
+  transition: all 0.9s ease-in-out;
+}
+
+.inbox8_1_1_1:hover {
+  opacity: 90%
+}
+
+.con8_3 {}
+
+.box8_1_1 {
+  margin-bottom: 1px;
+}
+
+.box8_1_2 {
+  color: rgba(180, 173, 173, 0.8)
+}
+
+.inbox8_1_1_1 {
+  margin-bottom: 1px;
+}
+
+.box8_2_1 {
+  color: rgba(180, 173, 173, 0.8);
+  font-size: 17px
+}
+
+.box8_2_2 {
+  font-family: 'Yantramanav', sans-serif;
+  margin-bottom: 2px;
+}
+
+.box8_2_3 {
+  font-family: 'Yantramanav', sans-serif;
+  margin-top: 0;
+}
+
+.box8_3_1 {
+  color: rgba(180, 173, 173, 0.8);
+  font-size: 17px
+}
+
+.box8_3_2 {
+  font-family: 'Yantramanav', sans-serif;
+  margin-bottom: 2px;
+}
+
+.box8_3_3 {
+  font-family: 'Yantramanav', sans-serif;
+  margin-top: 0;
+}
+
+.inbox8_4_1_1 {
+  opacity: 100%;
+  transition: all 0.9s ease-in-out;
+}
+
+.inbox8_4_1_1:hover {
+  opacity: 50%;
+}
+
+p {
+  font-size: 20px;
+}

@@ -1,0 +1,73 @@
+h1 {
+  font-size: 2rem;
+}
+
+.food {
+  height: 50vh;
+  position: absolute;
+  top: 5vh
+}
+
+.DishUpName {
+  line-height: 1.7;
+}
+
+.DishUpPrice {
+  font-size: 2rem;
+}
+
+.DishUp {
+  font-size: 1.5rem;
+}
+
+.dishDownOpis {
+  line-height: 1.3;
+  font-size: 1.5rem
+}
+
+.DishDownOpis {
+  line-height: 1.3;
+  font-size: 1.5rem
+}
+
+.dishDownPodtytuł {}
+
+.con2_1 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_2 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_3 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_4 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_5 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_6 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_7 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}
+
+.con2_8 {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 5rem;
+}

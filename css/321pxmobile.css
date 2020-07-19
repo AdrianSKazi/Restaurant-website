@@ -1,0 +1,58 @@
+.con1_1 {
+  width: 100%;
+}
+
+.button1_1_2_1 {
+  border-radius: 1rem;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  text-align: right;
+  position: relative;
+  bottom: 5rem;
+  line-height: 1.2rem;
+  padding: 2rem;
+  padding-right: 3rem;
+}
+
+.box2_1_1 {
+  font-size: 3.5rem;
+}
+
+.box2_1_2 {
+  font-size: 1.8rem;
+}
+
+.button2_2_1 {
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.con4_2 {
+  text-align: center;
+}
+
+.sec5 {
+  height: 40rem;
+}
+
+.box5_1 {
+  text-align: center;
+}
+
+.box5_2 {
+  text-align: center;
+}
+
+.sec4 {
+  height: 55rem;
+}
+
+.sec7 {
+  min-height: 100%;
+}
+
+.inbox7_1_1_6 {
+  height: 30rem;
+}

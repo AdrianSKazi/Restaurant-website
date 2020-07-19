@@ -1,0 +1,38 @@
+body {}
+
+h1 {
+  font-size: 12px
+}
+
+.food {
+  height: 50vh
+}
+
+.Dish {
+  font-size: 10px;
+
+}
+
+.DishUp {
+  font-size: 10px;
+}
+
+.DishUpName {
+  font-size: 15px;
+}
+
+.DishUpPrice {
+  font-size: 11px;
+}
+
+.DishDown {
+  font-size: 10px;
+}
+
+.DishDownPodtytuł {
+  font-size: 10px;
+}
+
+.DishDownOpis {
+  font-size: 10px;
+}

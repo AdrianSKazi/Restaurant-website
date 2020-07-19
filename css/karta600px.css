@@ -1,0 +1,69 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1_mobile {
+  height: 10vh
+}
+
+.line {}
+
+h1 {
+  font-size: 2rem;
+}
+
+.food {
+  height: 50vh;
+  position: absolute;
+  top: 4vh
+}
+
+.Dish {
+  font-size: 10px;
+
+}
+
+.DishUp {
+  font-size: 1.3rem;
+
+}
+
+.dishUp {
+  font-size: 1.3rem
+}
+
+.DishUpName {
+  font-size: 15px;
+}
+
+ul {
+  font-size: 1.3rem
+}
+
+.DishUpPrice {
+  font-size: 11px;
+}
+
+.DishDown {
+  font-size: 10px;
+}
+
+.DishDownPodtytuł {
+  font-size: 10px;
+}
+
+.DishDownOpis {
+  font-size: 10px;
+}
+
+.space {
+  position: relative;
+  bottom: 0;
+}
+
+.red {
+  max-height: 500px;
+  position: absolute;
+  bottom: 0;
+}

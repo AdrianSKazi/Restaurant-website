@@ -1,0 +1,23 @@
+.sec4 {
+  height: 80vh
+}
+
+.sec7 {
+  min-height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 8rem
+}
+
+.box1_1_2 {
+  align-items: center;
+  justify-content: center;
+}
+
+.button1_1_2_1 {
+  padding-right: 3rem;
+  border-radius: 1rem;
+}
+
+.button2_2_1 {
+  border-radius: 1rem;
+}

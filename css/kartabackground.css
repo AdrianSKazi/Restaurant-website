@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  background-image: url("/img/food.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  min-width: 300px;
+  font-family: 'Poiret One', cursive;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  grid-template-rows: 10vh 20vh 70vh auto;
+}

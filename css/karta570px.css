@@ -1,0 +1,43 @@
+.body {}
+
+.white {
+  display: none;
+}
+
+.green {
+  display: none;
+}
+
+.red {
+  position: relative;
+  bottom: -0.75rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.space {
+  display: flex;
+}
+
+h1 {
+  font-size: 12px
+}
+
+.food {
+  position: absolute;
+  top: 4vh
+}
+
+.dishUp {
+  font-size: 2rem
+}
+
+.dishDown {
+  font-size: 2rem;
+}
+
+.tytuł {
+  font-size: 3rem
+}

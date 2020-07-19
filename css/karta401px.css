@@ -1,0 +1,62 @@
+h1 {
+  font-size: 12px
+}
+
+.line {
+  padding: 1.2rem;
+}
+
+.logo {
+
+  padding-top: 0.5rem;
+  position: absolute;
+  left: 1.5rem
+}
+
+.food {
+
+  height: 50vh;
+  position: absolute;
+  top: 6vh
+}
+
+.Dish {
+  font-size: 10px;
+
+}
+
+.DishUp {
+  font-size: 10px;
+}
+
+.DishUpName {
+  font-size: 15px;
+}
+
+
+.DishUpPrice {
+  font-size: 11px;
+}
+
+.DishDown {
+  font-size: 10px;
+}
+
+.DishDownPodtytuł {
+  font-size: 10px;
+}
+
+.DishDownOpis {
+  font-size: 10px;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  max-width: 24rem;
+  position: relative;
+  bottom: -9.9vw;
+}
